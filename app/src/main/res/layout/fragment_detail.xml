@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="animal"
+            type="com.mukhash.networkingdemo.model.Animal" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/detailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:setPaletteColor="@{animal.imageUrl}"
+        android:orientation="vertical"
+        tools:context=".view.DetailFragment"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/animalDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imageUrl="@{animal.imageUrl}"
+            android:scaleType="center"
+            android:minHeight="200dp" />
+
+        <TextView
+            android:id="@+id/animalDetailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:layout_margin="4dp"
+            android:text="@{animal.name}" />
+
+        <TextView
+            android:id="@+id/animalDetailLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:text="@{animal.location}"/>
+
+        <TextView
+            android:id="@+id/animalDetailLifespan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:text="@{animal.lifeSpan}"/>
+
+        <TextView
+            android:id="@+id/animalDetailDiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:text="@{animal.diet}"/>
+
+    </LinearLayout>
+</layout>
