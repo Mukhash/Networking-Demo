@@ -7,7 +7,7 @@ it is a demo application based on modern Android application stacks and MVVM arc
 </br>
 
 <p align="left">
-<img src="/preview/dodo_screenshot.jpg" width="30%"/>
+<img src="/preview/preview_icon.png" width="30%"/>
 </p>
 
 ## Download
@@ -17,21 +17,20 @@ Go to the [Releases](https://github.com/Mukhash/dodo/releases) to download the l
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 26
-- [Kotlin](https://kotlinlang.org/) based + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) for asynchronous.
+- [Kotlin](https://kotlinlang.org/) based + [RxJava](https://github.com/ReactiveX/RxJava) for asynchronous.
 - JetPack
   - LiveData - notify domain layer data to views.
   - Lifecycle - dispose of observing data when lifecycle state changes.
   - ViewModel - UI related data holder, lifecycle aware.
-  - Room Persistence - construct a database using the abstract layer.
 - Architecture
   - MVVM Architecture (View - DataBinding - ViewModel - Model)
-  - Repository pattern
-- [Material-Components](https://github.com/material-components/material-components-android) - Material design components recyclerView, cardView.
+- Networking
+  - [Retrofit2](https://square.github.io/retrofit/) - a type-safe HTTP client for Android and Java
+- DI
+  - [Dagger2](https://github.com/google/dagger) - a fast dependency injector for Java and Android
+- Unit testing
+  - [Mockito](https://github.com/mockito/mockito) - a popular mocking framework for Java
+- [Material-Components](https://github.com/material-components/material-components-android) - Material design components recyclerView.
 
 - What's next
   - Saving states of UI
-  - Animation for recycler view
-  - Timestamps for added tasks
-  - Choice of background colors for list items
-  - Reminders
-  - Recorders
