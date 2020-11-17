@@ -13,7 +13,7 @@ it is a demo application based on modern Android application stacks and MVVM arc
 ## Download
 Go to the [Releases](https://github.com/Mukhash/dodo/releases) to download the lastest APK.
 
-<img src="/preview/dodo_preview.gif" align="right" width="32%"/>
+<img src="/preview/preview_vid.gif" align="right" width="32%"/>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 26
